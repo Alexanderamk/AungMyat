@@ -1,0 +1,281 @@
+/* Body */
+body {
+    margin: 0px;
+}
+ * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ hr {
+    margin: 0px;
+    border-top: 1px solid black;
+ }
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 35px;
+}
+header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-right: 13px;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header .logo h3 {
+    color: rgb(90, 90, 90);
+}
+header .nav ul {
+    display: flex;
+    list-style: none;
+}
+header .nav a {
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+/* Banner */
+#banner {
+    background-image: url(Images/Spider\ Man2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 170px 0px;
+    color: whitesmoke;
+}
+#banner h1 {
+    font-size: 45px;
+}
+#banner p {
+    margin: 50px 0px;
+    font-size: 23px;
+}
+#banner .about {
+    background-color: black;
+    border: 2px rgb(160, 117, 8) solid;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: whitesmoke;
+    border-radius: 7px;
+}
+#banner .about:hover {
+    background-color: rgb(7, 187, 187);
+}
+
+/* About Me */
+#about_me {
+    background-color: rgb(198, 248, 248);
+    padding: 40px;
+}
+#about_me .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#about_me .title h2 {
+    font-size: 30px;
+    margin: 30px 0px;
+}
+#about_me .title p {
+    font-size: 20px;
+    margin: 0px;
+}
+
+/* About-container */
+.about_container {
+    display: flex;
+    justify-content: space-between;
+}
+.about_container .get-to-know,
+.about_container .skills {
+    width: 48%;
+}
+.about_container h3 {
+    font-size: 22px;
+}
+.about_container p{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 25px;
+}
+.about_container .project_button {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: rgb(241, 156, 170);
+    border: 2px rgb(93, 119, 145) solid;
+    border-radius: 5px;
+    margin: 15px 0px;
+    display: inline-block;
+}
+.about_container .project_button:hover {
+    background-color: rgb(116, 216, 116);
+}
+.skill_lists span {
+    font-size: 18px;
+    background: linear-gradient(45deg, rgb(85, 245, 133), #c0e636);
+    padding: 7px 13px;
+    margin: 0px 5px 10px 0px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Project 1 */
+
+#Projects img {
+    width: 100%;
+}
+#Projects {
+    padding: 40px;
+    background-color: rgb(198, 248, 248);
+}
+#Projects .title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.project1-container,
+.project2-container,
+.project3-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.project1-container h3,
+.project2-container h3,
+.project3-container h3 {
+    font-size: 22px;
+    color: rgb(66, 170, 135);
+}
+.project1-container p,
+.project2-container p,
+.project3-container p {
+    font-size: 18px;
+}
+.project1-container div,
+.project2-container div,
+.project3-container div {
+    width: 48%;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    padding: 50px 50px 50px 50px;
+    background-color: rgb(187, 127, 17);
+    text-align: center;
+}
+footer h3 {
+    font-size: 27px;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+}
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.social-media img {
+    width: 30px;
+    margin: 15px 10px 0px 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 19px;
+    border: 1px solid rgb(255, 166, 0);
+    padding: 5px;
+}
+footer .copyright {
+    color: white;
+    font-size: 17px;
+    border-top: 2px solid white;
+    padding: 30px 0px 0px 0px;
+}
+
+/* Reasponsive */
+@media only screen and (max-width: 620px) {
+    /* Header */
+    header {
+        flex-direction: column;
+    }
+    header .logo {
+        justify-content: center;
+    }
+    header .nav ul {
+        padding: 0px;
+        justify-content: center;
+    }
+    header .nav a {
+        margin: 0px 20px;
+    }
+
+    /* Banner */
+    #banner {
+        padding: 100px 0px;
+    }
+    #banner h1 {
+        font-size: 32px;
+        margin: 0px 10px;
+    }
+    #banner p {
+        margin: 35px 10px;
+    }
+
+    /* About Me */
+    .about_container .get-to-know,
+    .skills {
+        width: 100%;
+    }
+    .about_container {
+        flex-wrap: wrap;
+    }
+    .get-to-know h3 {
+        text-align: center;
+    }
+
+    /* Projects */
+    #Projects .title {
+        font-size: 17px;
+    }
+    .project1-container,
+    .project2-container,
+    .project3-container {
+        flex-wrap: wrap;
+    }
+    .project1-container div,
+    .project2-container div,
+    .project3-container div {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px 30px 30px 30px;
+    }
+    footer h3 {
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        margin: 0px;
+    }
+    .social-media img {
+        width: 25px;
+        margin: 12px 7px 0px 0px;
+        background-color: rgb(255, 255, 255);
+        padding: 3px;
+    }
+    footer .copyright {
+        font-size: 15px;
+    }
+    .social-media {
+        margin-bottom: 40px;
+    }
+}
